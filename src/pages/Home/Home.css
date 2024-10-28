@@ -1,0 +1,144 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.banner-img{
+    object-fit: cover;
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 75%); 
+    -weblit-mask-image: linear-gradient(to right, transparent, black 75%);
+}
+.hero-caption{
+    margin-top: -800px;
+    display: flex;
+    flex-direction: column;
+    padding: 6%;
+    position: relative;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+}
+.caption-img{
+    max-width: 420px; 
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; 
+}
+.hero-caption p{
+    max-width: 700px; 
+    font-size: 17px; 
+    margin-bottom: 20px;
+    /* margin-top: -100px; /* Adjust this negative margin to move the paragraph up */
+}
+.hero-btns{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 50px; 
+}
+.hero-btns .btn img{
+    width: 24px; 
+}
+.hero-btns .btn{
+    border: 0; 
+    outline: 0;
+    padding: 8px 20px; 
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600px;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.hero-btns .btn.dark-btn{
+    background: #6d6d6eb3;
+    color: #fff;
+}
+.hero-btns .btn:hover{
+    background: #ffffffbf;
+}
+.hero-btns .btn.dark-btn:hover{
+    background: #6d6d6e66;
+}
+.more-cards{
+    padding-left: 6%;
+}
+@media (max-width: 1550px) {
+    .hero-caption {
+        margin-top: -600px;
+    }
+    .hero-caption .title-cards{
+        display: none;
+    }
+}
+@media (max-width: 1350px) {
+    .hero-caption {
+        margin-top: -400px;
+    }
+}
+@media (max-width: 768px) {
+    .hero-caption {
+        padding-left: 4%;
+        margin-top: -200px;
+    }
+
+    .caption-img {
+        width: 70%;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
+
+    .hero-caption p {
+        font-size: 14px;
+        max-width: 90%;
+    }
+}
+@media (max-width: 480px) {
+    .caption-img {
+        width: 60%;
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .hero-caption p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 800px) {
+    .hero-caption{
+        padding-left: 4%;
+        margin-top: -200px;
+    }
+    .caption-img{
+        margin-bottom: 10px;
+        width: 40%; 
+    }
+    .hero-caption p{
+        font-size: 12px; 
+        margin-bottom: 10px;
+    }
+    .hero-btns .btn img{
+        width: 20px;
+    }
+    .more-cards{
+        padding-left: 4%;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-caption{
+        margin-top: -150px;
+    }
+    .hero-btns .btn img{
+        width: 15px;
+    }
+    .hero-btns .btn{
+        padding: 4px 10px;
+        gap: 5px; 
+        font-size: 10px; 
+    }
+}
